@@ -33,7 +33,7 @@ void siot_metrics_thread(void *arg1, void *arg2, void *arg3)
 		zbus_chan_pub(&point_chan, &p, K_MSEC(500));
 
 		uint32_t uptime = k_uptime_seconds();
-		point_set_type_key(&p, POINT_TYPE_UPTIME, "");
+		point_init(&p, POINT_TYPE_UPTIME, "");
 		point_put_int(&p, uptime);
 		zbus_chan_pub(&point_chan, &p, K_MSEC(500));
 	}
