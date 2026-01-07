@@ -1,7 +1,5 @@
 #include <siot-string.h>
 #include <stdint.h>
-#include <zephyr/kernel.h>
-#include <string.h>
 
 void ftoa(float num, char *str, int precision)
 {
