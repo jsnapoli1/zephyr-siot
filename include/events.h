@@ -17,7 +17,7 @@ typedef struct {
 	bool store_in_nvs;
 	float warning_threshold;  // For numeric types (0 = not used)
 	float critical_threshold; // For numeric types (0 = not used)
-	bool always_generate;     // Bypass filtering (for ATS)
+	bool always_generate;     // Bypass filtering (for points that only get generated when an event has occurred)
 } event_config_t;
 
 // Application-specific event configuration table
