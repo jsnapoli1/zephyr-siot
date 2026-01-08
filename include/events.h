@@ -21,6 +21,7 @@ typedef struct {
 } event_config_t;
 
 // Application-specific event configuration table
+// Should be placed at the top of main.c in application
 extern const event_config_t event_configs[];
 extern const size_t event_configs_count;
 
