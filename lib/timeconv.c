@@ -49,7 +49,7 @@ uint64_t timeconv_epoch_ns_from_rfc3339(const char *buf, size_t buf_len)
 
 	LOG_DBG("Parsing RFC3339: '%s'", tmp);
 
-	// Accept forms with Z or offset
+	// Only accepts UTC format with Z suffix (e.g., "2024-01-15T12:30:45Z")
 	int year, mon, day, hour, min, sec;
 
 	LOG_DBG("Before manual parsing");

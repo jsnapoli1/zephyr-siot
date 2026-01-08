@@ -22,7 +22,7 @@ typedef struct {
 // https://github.com/simpleiot/simpleiot/blob/feat/js-subject-point-changes/data/point.go
 
 #define POINT_BUFFER_COUNT 150
-#define RFC_3339_MAX_LEN   26
+#define RFC_3339_MAX_LEN   21
 
 #define POINT_DATA_TYPE_UNKNOWN 0
 #define POINT_DATA_TYPE_FLOAT   1
